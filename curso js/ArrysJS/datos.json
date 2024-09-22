@@ -1,0 +1,15 @@
+[
+    {
+        "puertas":"tres",
+        "marca":"seat",
+        "color":"rojo",
+        "precio":"11.000€"
+
+    },
+    {
+        "puertas":"cinco",
+        "marca":"peugeot",
+        "color":"negro",
+        "precio":"15.000€"
+    }
+]

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./ejercicioFiltrarDesdeDatosJson.js" defer></script>
+    <style>
+        .caja{
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button id="botonRojo">Rojo</button>
+        <button id="botonNegro">Negro</button>
+        <select id="filtroPuertas">
+            <option value="todos">tolos los coches</option>
+            <option value="tres">tres puertas</option>
+            <option value="cinco">cinco puertas</option>
+        </select>
+    </header>
+    <main>
+        <section id="caja-grid" class="caja"></section>
+    </main>
+</body>
+</html>

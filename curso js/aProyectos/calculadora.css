@@ -1,0 +1,38 @@
+html{
+    background-color:rgba(128, 128, 128, 0.175) ;
+}
+
+h1{
+    text-align: center;
+}
+
+.calculadora{
+    background-color:white ;
+    width: 300px;
+    padding: 15px;
+    border-radius: 5px;
+    margin:0 auto;
+}
+
+input{
+    text-align: center;
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.273);
+    margin:3px ;
+    cursor: pointer;
+}
+
+input:hover{
+    background-color: rgba(128, 128, 128, 0.585);
+}
+
+.pantalla{
+    width: 88%;
+    background-color: white;
+    border: 0.1px solid rgba(128, 128, 128, 0.485);
+    pointer-events: none;
+    border-radius: 0px;
+}

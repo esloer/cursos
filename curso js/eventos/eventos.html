@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script defer src="./eventos.js"></script>
+</head>
+<body>
+    <h1>eventos:</h1>
+    <p id="seleccionable"></p>
+    <p id="fecha"></p>
+    <select id="select" onchange="cursos()">
+        <option value="html">html</option>
+        <option value="css">css</option>
+        <option value="js">javaScipt</option>
+        <option value="react">react</option>
+    </select>
+    <button onclick="mostrar()">Haz click</button>
+    <button onmousemove="fecha()">Mueve el raton para ver la fecha</button>
+</body>
+</html>
