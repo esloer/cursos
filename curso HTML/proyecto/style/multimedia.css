@@ -1,0 +1,85 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1{
+    height: 20px;
+    text-align: center;
+    font-family: fantasy;
+    font-style: italic;
+    background-color: black;
+    color: white;
+    line-height: 80px;
+    margin-top: -20px;
+    margin-bottom: 30px;
+    
+}
+
+nav{
+    height: 120px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black; /* Puedes personalizar el fondo según tus preferencias */
+    padding: 10px; /* Añade espacio para el contenido si es necesario */
+    border-bottom: 3px solid crimson; 
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+li{
+    margin: 25px;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contenedor{
+    margin-top: 50px;
+    margin-bottom: 123px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 130px;
+    padding: 20px;
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+img{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+footer p{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 30px;
+}

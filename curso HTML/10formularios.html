@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>formulario</h1>
+    <hr>
+
+    
+
+    <form > <!-- form es la etique del formulario . Se puede poner dentro de l aetiqueta los siguientes atributos para su envio action="envio.php" method="post" target="_blank"  -->
+        <h3>input text</h3>
+        <label for="usuario">Usuario:</label> <!-- label siempre va asocia con un input for del label tiene que ser el mismo que el id del input  -->
+        <input type="text" id="usuario" name="usuario" placeholder="Escribe tu usuario"><small> es obligatorio</small>
+        
+        <!-- dentro de la etiqueta input también se puede poner lo sisguientes parametros : readonly , disable , maxlength="10" minlength="3" , required -->
+
+        <h3>input password</h3>
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" id="contraseña" name="contraseña" placeholder="Escribe tu contraseña">
+
+        <h3>input email</h3>
+        <label for="email">Tu email:</label>
+        <input type="email" id="email" name="email" placeholder="Escribe tu email">
+        
+        <h3>ckeckbox se puede seleccionar muchos</h3>
+        <input type="checkbox" name="condiciones" value="HTML"> html
+        <input type="checkbox" name="condiciones" value="CSS"> css
+        <input type="checkbox" name="condiciones" value="JS"> js 
+        
+        <h3>radio solo se puede seleccionar uno</h3>
+        <input type="radio" name="lenguaje" value="html"> html
+        <input type="radio" name="lenguaje" value="css"> css
+        <input type="radio" name="lenguaje" value="js"> js 
+        
+        <h3>input number</h3>
+        <label for="promamacio">Años programando:</label>
+        <input type="number" id="promamacio">
+
+        <h3>input date</h3>
+        <label for="cumple">Tu cumpleaños:</label>
+        <input type="date" id="cumple">
+        
+        <h3>input file</h3>
+        <label for="fichero">Selecciona un fichero:</label>
+        <input type="file" name="fichero" id="fichero">
+        
+        <h3>text area</h3>
+        <label for="texto">Escribe una opinion:</label>
+        <textarea name="opinon" id="opinon" placeholder="Escribe un a reseña" rows="10" cols="20"></textarea>
+        
+        <h3>SELECTS</h3>
+        <label for="pais">Selecciona un pais o capital:</label>
+        <select name="pais" id="pais">
+            
+            <optgroup label="Paises">
+                <option value="españa">España</option>
+                <option value="andorra" selected>Andorra</option>
+                <option value="portugal">portugal</option>
+            </optgroup>
+
+            <optgroup label="capitales">
+                <option value="madrid">Madrid</option>
+                <option value="andorra" selected>Andorra</option>
+                <option value="portugal">portugal</option>
+            </optgroup>
+            
+        </select>
+
+        <h3>Inputs button</h3>
+        <input type="button" value="enviar datos"> tipo boton
+        <br>
+        <input type="submit" value="enviar datos"> tipo submit que es para enviar el formulario.
+        <br>
+        <input type="reset" value="reset el formulario"> para reseter el formulario
+
+        <h3>Etiqueta button con onclick</h3>
+        <button onclick="alert('hola')">Haz click para que el navegador te salude</button>
+    </form>
+</body>
+</html>

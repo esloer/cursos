@@ -1,0 +1,36 @@
+.p1{
+    color: black;
+    font-size: 25px;
+    font-weight: 900;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline green;
+    text-align: center;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.caja{
+    /* height:100px; */
+    /* width: 100px; */
+    background-color: crimson;
+    padding: 10px 10px;
+    color: white;
+    border: 5px solid black;
+    text-align: center;
+    margin-bottom:10px;
+}
+
+.contenedor{
+    background-color: blueviolet;
+}
+
+.contenedor p{
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    margin: 5px;
+}
