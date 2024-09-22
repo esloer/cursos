@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>grid</h1>
+    <p>grid nos permite organizar toda nuestra pagina web en base a columnas. Al igual que flex vamos a necesitar una etiqueta que haga de contenedor como un div y los hijos del contenedor seran los que se vean afectados.
+    </p>
+    <h2>formas de escribirlo</h2>
+    <p>en css vamos a utilizar los siguientes elementos para poder crear filas y colimnas que son :</p>
+    <ul>
+        <li>columnas :</li>
+        <ul>
+            <p>En este caso por cada 12px que tenemos sera una columna que se crea y ademas del espacio que tendra esa columna en este caso 12px.</p>
+            <li>grid-template-columns: 12px 12px 12px</li>
+            <p>Tambien lo podemosponer de forma mas abreiada posible</p>
+            <li>grid-template-columns: repeat(3,12px)</li>
+            <p>Otra forma posible es la de poner auto para que sea el html que ajuste el espacio por cada auto sera una columna y se puede poner tambien de las dos formas e incluso combinadas</p>
+            <li>grid-template-columns: auto auto auto</li>
+            <li>grid-template-columns: repeat(3, auto)</li>
+            <li>grid-template-columns: 12px auto 12 px</li>
+            <p>tambien se puede poner con porcentajes %</p>
+            <li>grid-template-columns: repeat(3, 5%)</li>
+            <li>grid-template-columns: 12px auto 5%</li><br>
+        </ul>
+        <div class="gcontainerc">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <li>filas :</li>
+        <ul>
+            <p>En este caso por cada 12px que tenemos sera una fila que se crea y ademas del espacio que tendra esa fila en este caso 12px.</p>
+            <li>grid-template-rows: 12px 12px 12px</li>
+            <p>Tambien lo podemosponer de forma mas abreiada posible</p>
+            <li>grid-template-rows: repeat(3,12px)</li>
+            <p>Otra forma posible es la de poner auto para que sea el html que ajuste el espacio por cada auto sera una columna y se puede poner tambien de las dos formas e incluso combinadas</p>
+            <li>grid-template-rows: auto auto auto</li>
+            <li>grid-template-rows: repeat(3, auto)</li>
+            <li>grid-template-rows: 12px auto 12px</li>
+            <p>tambien se puede poner con porcentajes %</p>
+            <li>grid-template-columns: repeat(3, 5%)</li>
+            <li>grid-template-columns: 12px auto 5%</li>
+        </ul>
+        <div class="gcontainerr">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </ul>
+    <h2>grid template aereas</h2>
+    <p>Con esto nosotros podemos definir que lo que va a ocupar una etiqueta y su lugar un ejemplo seria : <br> grid-template-areas: <br> header header header <br> sidemenu main main <br> footer footer footer footer</p>
+    <p>pero para que esto funcione habra que asignar a cada etiqueta hija un nombre con grid-area</p>
+    <div class="gcontainera">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+    <h2>grid-gap</h2>
+    <p>con grid-gap nos permite elegir la separacion que tendrann las filas y las columnas con lo siguiente : </p>
+    <ul>
+        <li>grid-row-gap</li>
+        <div class="gcontainerrow">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div>
+        <li>grid-column-gap</li>
+        <div class="gcontainercolumns">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div>
+        <li>grid-gap</li>
+        <p>lo tendremos todo en una sola linea</p>
+        <ul>
+            <li> un solo parametro afecta a columnas y filas</li>
+            <li>con dos parametros primero columna y despues fila</li>
+        </ul>
+    </ul>
+    <h2>justify-items</h2>
+    <p>lo mismo que con flex para redirigir a los hijos hacia donde queremos que vaya y se centra en los hijos y tenemos :</p>
+    <ul>
+        <li>felx-start :</li>
+        <p>es como vine por defecto</p>
+        <div class="gcontainerji">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div> <br>
+        <li>flex-end :</li>
+        <p>pone a los hijos al final</p>
+        <div class="gcontainerje">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div><br>
+        <li>center :</li>
+        <p>para centrar los hijos</p>
+        <div class="gcontainerjc">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div><br>
+        <li>stretch :</li>
+        <p>para que los hijos ocupen todo. Siempre y cuando estos no tengan ni whit ni height</p>
+        <div class="gcontainerjs">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div>
+    </ul>
+    <h2>justify-conten</h2>
+    <p>estos se ajustan al espacio y tenemos :</p>
+    <ul>
+        <li>strar</li>
+        <p>todos los objetos se ponen lo más posible hacia la izquierda</p>
+        <div class="gcontainerjcs">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div><br>
+        <li>strar</li>
+        <p>todos los objetos se ponen lo más posible hacia la derecha</p>
+        <div class="gcontainerjce">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div><br>
+        <li>center</li>
+        <p>todos los objetos se centran </p>
+        <div class="gcontainerjcc">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div><br>
+        <li>space-evenly</li>
+        <p>todos los objetos se centran pero tienen una separecoion entre ellos y las esquinas </p>
+        <div class="gcontainerjse">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div><br>
+        <li>space-between</li>
+        <p>todos los objetos se separan el primero y el ultimo se van lo mas pegado a la izquierda y derecha y el resto se centran </p>
+        <div class="gcontainerjsb">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div><br>
+        <li>space-araund</li>
+        <p>todos los objetos se separan ocupando lo maximo posible del padre pero sin pegarse a las esquinas </p>
+        <div class="gcontainerjsa">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div><br>
+    </ul>
+    <h2>aling-conten</h2>
+    <p>tambien tenemos esta propiedad pero no se para que sirve.</p>
+
+    <h2>grid-auto-flow</h2>
+    <p>nos sirve para el orden de las columnas</p>
+    <ul>
+        <li>column</li>
+        <p>como columnas</p>
+        <div class="gcontainergafr">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div><br>
+    </ul>
+</body>
+</html>

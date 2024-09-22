@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>flex</h1>
+
+    <p> Siempre tendremos que tener un padre y el contenido que tenga ese padre osea la etiquettas hijas seran las que se vean afectadas por el flex. Tenemos :</p>
+
+    <h2>flex-direction</h2>
+    <p>la direccion que tendran los elementos hijos</p>
+    <ul>
+        <li>
+            <p>flex-direction: row; </p>
+            <ul>
+                <li><p>row : qe viene por defecto y hace un a fila de izquierda a derecha</p></li>
+                <div class="row">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                </div>
+                <li><p>row-reverse : lo mimso pero de derecha a izquierda</p></li>
+                <div class="rowr">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                </div>
+            </ul>
+        </li>
+        <li>
+            <p>flex-direction : column;</p>
+            <ul>
+                <li> <p>colum : lo pone en columna de arriba a abajo</p></li>
+                <div class="col">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                </div>
+                <li> <p>colum-reserve : lo mismo pero de abajo a arriba </li>
+                <div class="colr">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                </div>
+            </ul>
+        </li>
+    </ul>
+    
+
+    <h2>flex-wrap</h2>
+    <p>si lo hijos que hay sobresalen del elemento padre automaticamente los pondra en una fila nueva</p>
+    <ul>
+        <li>
+            <p>flex-wrap : nowrap;</p>
+            <ul>
+                <li><p>nowrap : viene por defecto y hace que se agrande el padre con la cantidad maxima de sus hijos</p></li>
+            </ul>
+            <div class="nwrap">
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+                <p>4</p>
+            </div>
+        </li>
+        <li>
+            <p>flex-wrap : wrap ;</p>
+            <ul>
+                <li> <p>wrap : cambia de fila los elementos hijos si estos van a sobresalir del padre para que el padre no se deforme y contnga siempre sus medidas</p></li>
+                <div class="wrap">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                </div>
+            </ul>
+        </li>
+        <li>
+            <p>flex-wrap : wrap-reverse ;</p>
+            <ul>
+                <li> <p>wrap-reverse : lo mismo pero los hijos se posicionan en la parte inferior y no en la superios</p></li>
+                <div class="wrapr">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                </div>
+            </ul>
+        </li>
+    </ul>
+    
+
+    <h2>justify-content</h2>
+    <p>alinean los hijos en el eje horizontal </p>
+    <ul>
+        <li>
+            <p>justify-content : flex-start;</p>
+            <ul>
+                <li><p>flex-start: viene por defecto y los hijos se alinean todos lo mas posible hacia la izquierda</p></li>
+                <div class="start">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                </div>
+            </ul>
+        </li>
+        <li>
+            <p>justify-content : flex-end;</p>
+            <ul>
+                <li> <p>flex-end: alinea los hijos lo maximo posible hacia la derecha</p></li>
+                <div class="end">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                </div>
+            </ul>
+        </li>
+        <li>
+            <p>justify-content : center</p>
+            <ul>
+                <li> <p>center : los hijos se alinean ene lcentro</p></li>
+                <div class="center">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                </div>
+            </ul>
+        </li>
+        <li>
+            <p>justify-content : space-between</p>
+            <ul>
+                <li> <p>space-between : el hijo de la izquierda se pondra lo maximo a la izquierda el de la derecha lo maximo a la derecha y lo del media seseparan</p></li>
+                <div class="between">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                </div>
+            </ul>
+        </li>
+        <li>
+            <p>justify-content : space-arraund</p>
+            <ul>
+                <li> <p>space-arraund : todos los elementos se separan pero los hijos de la derecha e izquierda no se pondran al maximo de los laterales</p></li>
+                <div class="arraund">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                </div>
+            </ul>
+        </li>
+        <li>
+            <p>justify-content : space-evently</p>
+            <ul>
+                <li> <p>space-evently : es casi igual que el arraund pero un poco mas hacia el medio pero se utiliza más arraund.</p></li>
+                <div class="evently">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                </div>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>aling-items</h2>
+    <p>alinean los hijos en el eje vertical </p>
+    <ul>
+        <li>
+            <p>aling-items : flex-start;</p>
+            <ul>
+                <li><p>flex-start: viene por defecto y los hijos se alinean todos lo mas arriba posible</p></li>
+                <div class="fstart">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                </div>
+            </ul>
+        </li>
+        <li>
+            <p>aling-items : flex-start;</p>
+            <ul>
+                <li><p>flex-start: los hijos se alinean todos lo mas abajo posible</p></li>
+                <div class="fend">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                </div>
+            </ul>
+        </li>
+        <li>
+            <p>aling-items : center;</p>
+            <ul>
+                <li><p>center: los hijos se alinean todos ene lcentro</p></li>
+                <div class="fcenter">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                </div>
+            </ul>
+        </li>
+        <h2>aling-content</h2>
+        <p>alinean el contenido </p>
+        <ul>
+            <li>
+                <p>aling-content : flex-start;</p>
+                <ul>
+                    <li><p>flex-start: viene por defecto y los hijos se alinean todos lo mas arriba y en el eje.</p></li>
+                    <div class="cstart">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                    </div>
+                </ul>
+            </li>
+            <li>
+                <p>aling-content : flex-end;</p>
+                <ul>
+                    <li><p>flex-end:los hijos se alinean todos lo mas abajo y en el eje.</p></li>
+                    <div class="cend">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                    </div>
+                </ul>
+            </li>
+            <p>también tenemos center , space-bettween , space-arround , straetch pero por algun motivo no funciona pero tampoco se utiliza mucho esta propiedad</p>
+
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+.d1,.d2,.d3{
+    width: 100px;
+    height: 100px;
+}
+
+.d1{
+    background-color: blueviolet;
+    padding: 50px;
+    position: relative;
+    z-index: -3;
+    
+}
+
+.d2{
+    background-color: crimson;
+    padding: 50px;
+    position: relative;
+    z-index: -2;
+}
+
+.d3{
+    background-color: green;
+    padding: 50px;
+    position: relative;
+    z-index: -1;
+}
+
+.h2{
+    margin-top: 150px;
+}
+
+.flow{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    overflow: scroll; /* para poner un scroll */
+    /* overflow: hidden; para esconder todo */
+    overflow-x: hidden; /*para esconder el escrol horizontal*/
+    /* overflow-y: para esconder el scroll vertical ; */
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 20px;
+}

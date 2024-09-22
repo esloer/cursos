@@ -1,0 +1,56 @@
+.contenedor{
+    overflow: auto;
+}
+
+.leftside{
+    float: none;
+    width: auto;
+}
+
+.texto{
+    position: absolute;
+    top: 60px;
+    color: red;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+@media (min-width:480px){ /* menos de esto no lo cumple */
+    .leftside{
+        float: left;
+        width: 300px;
+    }
+    
+    .texto{
+        position: static;
+        color: blueviolet;
+    }
+
+    img{
+        height: 200px;
+        width: 200px
+    };
+}
+
+@media (max-width:900px){ /* mas de esto no lo cumple */
+
+    body{
+        background-color: black;
+    }
+}
+
+/* @media (min-height:900px) and (min-width:900px) tambien se puede combinar con and y poner el aalto y el ancho */
+
+/* medida utilizadas : 
+
+- monitor : 1200px
+
+-laptop : 992px
+
+- tablet : 768px
+
+- movil : 600px
+
+
+
+*/
+

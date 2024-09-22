@@ -1,0 +1,132 @@
+img{
+    width: 200px;
+    height: 200px;
+}
+
+
+
+/* co @keyframes hacemos la animacion */
+
+@keyframes imagen{ /* añadimos un nombre . Ese nombre lo utilizaremos para que l animacion se haga */
+    from{ /* con from decimos desde donde empezamos */
+        opacity: 1;
+    }to{ /* y con to hasta donde terminaos */
+        opacity: 0.5;
+    }
+}
+
+img:hover{
+    animation-name: imagen; /* ponemos el nombre de nestra animacion */
+    animation-duration: 2s; /* cuanto timepo va a durar la  animacion hasta que termina */
+    animation-iteration-count: infinite; /* las veces que se va a ejecutar */
+}
+
+
+/* animacion cuadrado */
+
+
+
+@keyframes cuadrado {
+    0%{
+        background-color: coral;
+        left: 0;
+        top: 0;
+    }
+    25%{
+        background-color: blue;
+        left: 200px;
+        top:0;
+    }
+    50%{
+        background-color: crimson;
+        left: 200px;
+        top: 200px;
+    }
+    75%{
+        background-color: blueviolet;
+        left: 0px;
+        top: 200px;
+    }
+
+    100%{
+        background-color: coral;
+        left: 0;
+        top: 0;
+    }
+}
+
+.cua{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    position: relative;
+    animation-name: cuadrado; /* tambien se puede poner dentro de un estilo */
+    animation-duration: 5s; /* duracion */
+    animation-timing-function: ease-in-out;
+    animation-delay:1s ;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+   
+}
+
+
+/* animacion cuadrado una sola line */
+
+@keyframes cua1{
+    from{
+        background-color: coral;
+        left: 0;
+    }
+    to{
+        background-color: blueviolet;
+        left: 200px;
+    }
+}
+
+.cua2{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    position: relative;
+    animation: cua1 2s ease-in-out 1s infinite alternate ;
+}
+
+.cua3{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    position: relative;
+    animation: cua1 2s linear 1s infinite alternate ;
+}
+
+.cua4{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    position: relative;
+    animation: cua1 2s ease 1s infinite alternate ;
+}
+
+.cua5{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    position: relative;
+    animation: cua1 2s ease-in 1s infinite alternate ;
+}
+
+.cua6{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    position: relative;
+    animation: cua1 2s ease-in-out 1s infinite alternate ;
+}
+
+.cua7{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    position: relative;
+    animation: cua1 2s ease-out 1s infinite alternate ;
+}

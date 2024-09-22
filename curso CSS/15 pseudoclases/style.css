@@ -1,0 +1,70 @@
+.d1{
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+}
+
+.d1:hover{
+    cursor: pointer;
+    background-color: blueviolet;
+}
+
+a{
+    background-color: aquamarine;
+}
+
+a:visited{
+    background-color: cornflowerblue;
+}
+
+a:active{
+    color: deeppink; /* cuando se hace click */
+}
+
+.p1{
+    display: none;
+}
+
+.d2{
+    width: 100px;
+    background-color: aquamarine;
+}
+
+.d2:hover{
+    background-color: blue;
+}
+
+.d2:hover + .p1{
+    display: block;
+    background-color: black;
+    color: white;
+}
+
+.primerhijo :first-child{ /* en este caso sera siempre el primer hijo de la claase */
+    background-color: coral;
+}
+
+p:first-child{ /* en este caso solo si el primer hijo es una p si hay una etiqueta primero que no sea p no va a tener efecto */
+    color: black;
+    background-color: blue;
+
+}
+
+.primerhijo2 :first-child + p{ /* en este caso solo si el primer hijo es una p si hay una etiqueta primero que no sea p no va a tener efecto */
+    color: grey;
+    background-color: rebeccapurple;
+
+}
+
+.nth p:nth-child(even){ /* para los elemento hijos pares */
+    background-color: grey;
+}
+
+.nth p:nth-child(odd){ /* para los elementos hijos impares */
+    background-color: rgba(128, 128, 128, 0.273);
+}
+
+input:focus{
+    background-color: coral;
+    color: black;
+}

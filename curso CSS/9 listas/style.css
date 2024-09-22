@@ -1,0 +1,21 @@
+ul{
+    list-style-type: armenian ; /* para cambiar el estilo de los circulos  */
+}
+
+
+ol{
+    list-style-image: url(./icons8-corazon-de-perro-30.png); /* con imagenes */
+}
+
+.ul1{
+    background-color: black;
+    padding: 20px;
+}
+
+.ul1 li {
+    background-color: grey;
+    color: crimson;
+    padding: 5px;
+    margin: 15px;
+
+}

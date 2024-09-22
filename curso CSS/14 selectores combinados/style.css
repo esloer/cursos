@@ -1,0 +1,13 @@
+/* selecctor descendiente */
+
+div p { /* esta es una forma de seleccionar los p que estan dentro del div */
+    background-color: yellow;
+}
+
+span>p{
+    background-color: aqua; /* seleccionamos el nieto */
+}
+
+div+p{
+    background-color: crimson; /* selecciona el primer hermano diferente a la etiqueta antes del mas */
+}

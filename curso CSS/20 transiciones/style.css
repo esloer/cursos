@@ -1,0 +1,21 @@
+img{
+    width: 300px;
+    height: 300px;
+    opacity: 1;
+    transition: opacity 2s ease-in-out 0.3s, width 5s linear, height 5s linear;
+}
+
+img:hover{
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 1s;
+}
+
+img:hover{
+    opacity: 0.5;
+    width: 350px;
+    height: 350px;
+    transition: opacity 2s ease-in-out 0.3s, width 5s linear, height 5s linear;
+}

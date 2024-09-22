@@ -1,0 +1,42 @@
+
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-image: url(../img/fondo.png); */
+}
+
+/* Para crear un fondo con diferenes colores */
+
+.div1{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    background: linear-gradient(90deg, #FFF 0%, red 20% , blue 100%);
+}
+
+/* Para crear un fondo con imagenes */
+
+.div2{
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    background-image: url(../img/fondo.png);
+    background-repeat: no-repeat; /*para que no se repita la imagen  */
+    /* background-attachment:fixed ; para que el fondo no se mueva */
+    /* Con background solo puede tener todos los elementos */
+    background-size: 500px 500px; /* para el ancho y el alto */
+    background-position: 20px 5px; /* para mover la imagen */
+}
+
+/* Para crear un fondo con solo dos lineas */
+
+.div3{
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    background: url(../img/fondo.png)  no-repeat center center  ;
+    background-size: 500px 500px;
+}

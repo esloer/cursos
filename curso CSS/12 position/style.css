@@ -1,0 +1,54 @@
+.static{
+    position: static; /* por defecto */
+    border: 1px solid green;
+}
+
+.d2{
+    border: 1px solid green;
+}
+
+.p1{
+    
+    position: relative; /* me muevo por donde quiera */
+    border: 1px solid crimson;
+    top: 50px;
+    left: 20px;
+}
+
+.d3{
+    border: 1px solid green;
+    position: fixed;
+    width: 450px;
+    right: 0;
+    margin-right: 5px;
+}
+
+.h23{
+    margin-top: 60px;
+}
+
+.h24{
+    margin-top: 150px;
+}
+
+.p5{
+    position: sticky;
+}
+
+.d6{
+    position: relative;
+    left: 50px;
+}
+
+img{
+    width: 50%;
+    height: auto;
+}
+
+.p6{
+    position: absolute;
+    text-align: center;
+    width: 50%;
+    top: 40%;
+    color: white;
+}

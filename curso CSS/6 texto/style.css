@@ -1,0 +1,83 @@
+h1{
+    color: blueviolet;
+}
+
+span{
+    color: blue;
+    text-decoration: underline black;
+}
+
+/* text-aling center */
+
+.p1{
+    text-align: center ;
+}
+
+/* text-aling center */
+
+.p2{
+    text-align: right ;
+}
+
+/* text-aling justifi */
+
+.p3{
+    text-align: justify ;
+}
+
+h2{
+    color: crimson;
+}
+
+/* text-deoration overline */
+
+.de1{
+    text-decoration: overline;
+    text-decoration-color: orangered;
+    text-decoration-style:double ;
+}
+
+/* text-deoration underline */
+
+.de2{
+    text-decoration: underline;
+    text-decoration-color: rgb(58, 98, 8);
+    text-decoration-style: dashed ;
+    
+}
+
+/* text-deoration line-trough */
+
+.de3{
+    text-decoration: line-through rgb(4, 173, 234) wavy 3px ;
+}
+
+/* transformar el texto */
+
+.tr1{
+    text-transform: uppercase;
+}
+
+.tr2{
+    text-transform: capitalize;
+}
+
+.tr3{
+    text-indent: 100px;
+}
+
+.tr4{
+    letter-spacing: 10px;
+}
+
+.tr5{
+    line-height: 40px;
+}
+
+.tr6{
+    word-spacing: 30px;
+}
+
+.tr7{
+    text-shadow: 40px 15px 5px red ; /* 1 derecha o izquierda 2 arriba o abajo 3 desenfoque y el color y se puede poner una coma para seguir poniendo sombras*/
+ }

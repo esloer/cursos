@@ -1,0 +1,65 @@
+.d1{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    border: 3px solid black;
+    /* margin */
+    margin: 20px;  /* con uno solo se aplica a los 4 lados */
+}
+
+.d2{
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    border: 3px solid black;
+    margin: 30px 40px /* con dos serias 1 para arriba y abajo y el 2 derecha izquierda */
+}
+
+.d3{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    border: 3px solid black;
+    margin: 50px 60px 70px 80px; /* con 4 seria arriba derecha abajo izquierda  */
+}
+
+/* padding en varias lineas */
+
+.d4{
+    width: 400px;
+    height: 400px;
+    background-color: crimson;
+    border: 3px solid black;
+    /* paddin afecta la separacion que va a tener con respecto al elemento que tiene dentro en este caso contenido */
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.contenido1{
+    width: 400px;
+    height: 400px;
+    background-color: blueviolet;
+    border: 3px solid black;
+}
+
+/* padding en una sola linea */
+
+.d5{
+    width: 400px;
+    height: 400px;
+    background-color: blueviolet;
+    border: 3px solid black;
+    /* paddin afecta la separacion que va a tener con respecto al elemento que tiene dentro en este caso contenido */
+
+    padding: 20px 30px 40px 50px; /* con 1 los 4 a la vez , con 2 arriba y abajo y derecha e izquierda y con 4 arriba abajo derecha y izquierda */
+    
+}
+
+.contenido2{
+    width: 400px;
+    height: 400px;
+    background-color: crimson;
+    border: 3px solid black;
+}

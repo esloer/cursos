@@ -1,0 +1,25 @@
+p::first-line{ /* solo la primera linea */
+    color: crimson;
+}
+
+p::first-letter{ /* solo la primera letra */
+    font-size: xx-large;
+}
+
+.icon::before{
+   content: url(./icono.png);
+}
+
+body p:nth-child(6)::after{
+    content: url(icono.png);
+}
+
+::marker{
+    color: blueviolet;
+    font-size: xx-large;
+}
+
+::selection{
+    color: blueviolet;
+    background-color: coral;
+}

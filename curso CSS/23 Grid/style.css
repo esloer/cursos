@@ -1,0 +1,195 @@
+
+.gcontainerc div, .gcontainerr div, .gcontainerrow div, .gcontainercolumns div, .gcontainerji div,.gcontainerje div, .gcontainerjc div, .gcontainerjcs div, .gcontainerjce div, .gcontainerjcc div, .gcontainerjse div, .gcontainerjsb div, .gcontainerjsa div, .gcontainergafr div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    background-color: blueviolet;
+}
+
+.gcontainerjs div  {
+    border: 1px solid black;
+    background-color: blueviolet
+}
+
+.gcontainerc{
+
+    background-color: crimson;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.gcontainerr{
+    grid-template-columns: auto auto auto;
+    background-color: crimson;
+    display: grid;
+    grid-template-rows: 50px;
+}
+
+/* grid template areas */
+
+
+
+/* primero tendremos que asignar una nombre a la etiqueta hija para luego utilizarlo con grid-area, ese nombre en el grid-template-areas y tiene que ser a todos los hijos */
+
+.gcontainera div:nth-child(1){
+    grid-area: d1;
+    background-color: blueviolet;
+    height: 50px;
+    border: 3px solid black;
+}
+
+.gcontainera div:nth-child(2){
+    grid-area: d2;
+    background-color: coral;
+    height: 25px;
+    border: 3px solid black;
+}
+
+.gcontainera div:nth-child(3){
+    grid-area: d3;
+    background-color: cornflowerblue;
+    border: 3px solid black;
+}
+
+.gcontainera div:nth-child(4){
+    grid-area: d4;
+    height: 25px;
+    background-color: burlywood;
+    border: 3px solid black;
+}
+
+.gcontainera div:nth-child(5){
+    grid-area: d5;
+    height: 25px;
+    background-color: aquamarine;
+    border: 3px solid black;
+}
+
+.gcontainera div:nth-child(6){
+    grid-area: d6;
+    height: 50px;
+    background-color: chocolate;
+    border: 3px solid black;
+}
+
+.gcontainera{ /* en el contenedor es donde utilizamos grid-template-areas junto con los nombres que hemos puesto en grid-area */
+    display: grid;
+    grid-template-areas: 
+    
+    "d1 d1 d1 d1"
+    "d2 d2 d3 d3"
+    "d4 d4 d5 d5"
+    "d6 d6 d6 d6"
+    ;
+    background-color: crimson;
+    row-gap: 2px; /* separacion que hay entre la filas */
+    column-gap: 2px; /* separacion que hay entre las columnas */
+    padding: 2px;
+
+}
+
+/* row-gap , column-gap , grid-gap */
+
+.gcontainerrow{
+    display: grid;
+    background-color: crimson;
+    grid-template-columns: auto auto auto;
+    row-gap: 2px; /* separacion que hay entre las filas */
+}
+
+
+.gcontainercolumns{
+    display: grid;
+    background-color: crimson;
+    grid-template-columns: 100px 100px;
+    column-gap: 10px; /* separacion que hay entre la columnas */
+    /* grid-gap : 2px ; con esto afect a la vez columnas y filas */
+    /* grid-gap : 2px 2px ; primero filas y despues columnas */
+}
+
+/* justifi-items */
+
+.gcontainerji{
+    display: grid;
+    background-color: crimson;
+    grid-template-columns: auto auto auto;
+    justify-items: flex-start ;
+
+}
+
+.gcontainerje{
+    display: grid;
+    background-color: crimson;
+    grid-template-columns: auto auto auto;
+    justify-items: flex-end ;
+}
+
+.gcontainerjc{
+    display: grid;
+    background-color: crimson;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+
+}
+
+.gcontainerjs{
+    display: grid;
+    background-color: crimson;
+    grid-template-columns: auto auto auto;
+    justify-items: stretch;
+
+}
+
+/* justifi-content */
+
+.gcontainerjcs{
+    display: grid;
+    background-color: crimson;
+    grid-template-columns: auto auto auto;
+    justify-content: flex-start;
+}
+
+.gcontainerjce{
+    display: grid;
+    background-color: crimson;
+    grid-template-columns: auto auto auto;
+    justify-content: flex-end;
+}
+
+.gcontainerjcc{
+    display: grid;
+    background-color: crimson;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+}
+
+.gcontainerjse{
+    display: grid;
+    background-color: crimson;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+}
+
+.gcontainerjsb{
+    display: grid;
+    background-color: crimson;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+}
+
+.gcontainerjsa{
+    display: grid;
+    background-color: crimson;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+}
+
+/* grid-auto-flow */
+
+.gcontainergafr{
+    display: grid;
+    background-color: crimson;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    grid-auto-flow:column;
+}

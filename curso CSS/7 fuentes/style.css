@@ -1,0 +1,48 @@
+.serif{
+    font-family:serif ;
+}
+
+.sanserif{
+    font-family: sans-serif;
+}
+
+.mono{
+    font-family: monospace;
+}
+
+.cursive{
+    font-family: cursive;
+}
+
+.fantasy{
+    font-family: fantasy;
+}
+
+.it{
+    font-style: italic;
+}
+
+.we{
+    font-weight: 900;
+}
+
+.fv{
+    font-variant: small-caps;
+}
+
+.fs{
+    font-size: 2rem;
+}
+
+.todo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, serif; /* el tipo de fuente */
+    font-style: italic; /* el estilo si negrita o de lado */
+    font-weight: bold ; /* seria como en negrita*/
+    font-variant: small-caps; /* la variante */
+    font-size: 2em; /* el tamaño es responsive */
+}
+
+.esti{
+    font-family: 'Inspiration', cursive;
+    font-size: 4rem;
+}

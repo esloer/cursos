@@ -1,0 +1,38 @@
+ul{
+    list-style-type: none; /* para quitar los puntos de las listas */
+    margin: 0; /* con 0 nunca se pone con px ya que se multiplica con el px */
+    padding: 0;
+    overflow: hidden; /* para quitar las barras scroll */
+    background-color: rgb(54, 54, 54);
+}
+
+li{
+    float: left;
+    border-right: 1px solid blueviolet ;
+}
+
+li:last-child{
+    border-right: none;
+    float: right;
+    border-left:  1px solid blueviolet ;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+.active{
+    background-color: coral;
+}
+
+li a:hover:not(.active){ /* con not le deci que no afecte a la etiqueta que tenga la clase que esta dentro del parentesis*/
+    background-color: blueviolet;
+}
+
+nav li:nth-child(3){
+    border-right: none;
+}

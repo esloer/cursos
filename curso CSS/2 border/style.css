@@ -1,0 +1,123 @@
+/* border dotted */
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* border dotted */
+
+.d1{
+    width: 100px;
+    height: 100px;
+    border-style: dotted;
+}
+
+/* border dashed */
+
+.d2{
+    width: 100px;
+    height: 100px;
+    border-style: dashed;
+}
+
+/* border solid */
+
+.d3{
+    width: 100px;
+    height: 100px;
+    border-style: solid;
+}
+
+/* border double */
+
+.d4{
+    width: 100px;
+    height: 100px;
+    border-style: double;
+}
+
+/* border groove */
+
+.d5{
+    width: 100px;
+    height: 100px;
+    border-style: groove;
+}
+
+/* border ridge */
+
+.d6{
+    width: 100px;
+    height: 100px;
+    border-style: ridge;
+}
+
+/* border inset */
+
+.d7{
+    width: 100px;
+    height: 100px;
+    border-style: inset;
+}
+
+/* border outset */
+
+.d8{
+    width: 100px;
+    height: 100px;
+    border-style: outset;
+}
+
+/* border none */
+
+.d9{
+    width: 100px;
+    height: 100px;
+    border-style: none;
+}
+
+/* border hidden */
+
+.d10{
+    width: 100px;
+    height: 100px;
+    border-style: hidden;
+}
+
+/* border mix */
+
+.d11{
+    width: 100px;
+    height: 100px;
+    border-style: ridge ;
+}
+
+/* border en un a sola linea */
+
+.d12{
+    width: 100px;
+    height: 100px;
+    border: 5px solid crimson;
+}
+
+/* border cada lado por separado y en una sola linea */
+
+.d13{
+    width: 100px;
+    height: 100px;
+    border-top: 5px solid crimson;
+    border-right: 7px double blueviolet ;
+    border-bottom: 9px dotted gray;
+    border-left: 11px inset blue;
+}
+
+/* border-radius*/
+
+.d14{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
